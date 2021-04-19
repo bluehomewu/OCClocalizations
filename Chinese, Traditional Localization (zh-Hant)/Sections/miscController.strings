@@ -1,12 +1,12 @@
 
 /* Class = "NSButtonCell"; title = "DEBUG_INFO in DEBUG, NOOPT"; ObjectID = "0hR-wG-mgt"; */
-"0hR-wG-mgt.title" = "DEBUG，NOOPT中的DEBUG訊息";
+"0hR-wG-mgt.title" = "DEBUG，NOOPT中的 DEBUG 訊息";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable VirtualSMC-compatible authenticated restart.\n\nAuthenticated restart is a way to reboot FileVault 2 enabled macOS without entering the password. A dedicated terminal command can be used to perform authenticated restarts: sudo fdesetup authrestart. It is also used when installing operating system updates.\n\nVirtualSMC performs authenticated restarts by splitting and saving disk encryption keys between NVRAM and RTC, which despite being removed as soon as OpenCore starts, may be considered a security risk and thus is optional."; ObjectID = "0sy-D3-AKk"; */
-"0sy-D3-AKk.ibShadowedToolTip" = "允許重新啟動 FileVault2 分區時不用再次輸入密碼, 有安全風險。\n與硬碟加密啟動相關，一般選NO";
+"0sy-D3-AKk.ibShadowedToolTip" = "允許重新啟動 FileVault2 分區時不用再次輸入密碼，有安全風險。\n與硬碟加密啟動相關，一般選 NO ";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 64 bit\nFailsafe: 0\nDescription: Apple Enclave Identifier.\n\nSetting this value to any non-zero 64-bit integer will allow using personalised Apple Secure Boot identifiers. To use this setting, generate a random 64-bit number with a cryptographically secure random number generator. As an alternative, the first 8 bytes of SystemUUID can be used for ApECID, this is found in macOS 11 for Macs without the T2 chip.\n\nWith this value set and SecureBootModel valid (and not Disabled), it is possible to achieve Full Security of Apple Secure Boot.\n\nTo start using personalised Apple Secure Boot, the operating system must be reinstalled or personalised. Unless the operating system is personalised, macOS DMG recovery cannot be loaded. In cases where DMG recovery is missing, it can be downloaded by using the macrecovery utility and saved in com.apple.recovery.boot as explained in the Tips and Tricks section. Note that DMG loading needs to be set to Signed to use any DMG with Apple Secure Boot.\n\nTo personalise an existing operating system, use the bless command after loading to macOS DMG recovery. Mount the system volume partition, unless it has already been mounted, and execute the following command:\nbless bless --folder \"/Volumes/Macintosh HD/System/Library/CoreServices\" \\ --bootefi --personalize\n\nOn macOS versions before macOS 11, which introduced a dedicated x86legacy model for models without the T2 chip, personalised Apple Secure Boot may not work as expected. When reinstalling the operating system, the macOS Installer from macOS 10.15 and older will often run out of free memory on the /var/tmp partition when trying to install macOS with the personalised Apple Secure Boot. Soon after downloading the macOS installer image, an Unable to verify macOS error message will appear.\n\nTo workaround this issue, allocate a dedicated RAM disk of 2 MBs for macOS personalisation by entering the following commands in the macOS recovery terminal before starting the installation:\ndisk=$(hdiutil attach -nomount ram://4096)\ndiskutil erasevolume HFS+ SecureBoot $disk\ndiskutil unmount $disk\nmkdir /var/tmp/OSPersonalizationTemp\ndiskutil mount -mountpoint /var/tmp/OSPersonalizationTemp $disk"; ObjectID = "0yA-ct-dgi"; */
-"0yA-ct-dgi.ibShadowedToolTip" = "Apple Enclave標示符。\n將此值設定為任何非零的64位整數將允許使用個人化的Apple Secure Boot標示符。設定此值且SecureBootModel有效且未停用的情況等效於實現Apple Secure Boot的完全安全性。如果要使用此設定，請確保使用加密安全的隨機數建立器建立隨機的64位數字. 設定此值且SecureBootModel有效且未停用，可以實現Apple Secure Boot的完全安全性.\n\n注意 1: 您必須重新安裝系统或使用macOS DMG恢復–將此值設定為非零後，個人化安裝。只有通過macOS恢復或使用asr建立的個人化構建，才能安裝ApECID值設定為非零的操作系统。.\n\n注意 2: 當前，此選項的使用不可靠（顯然是macOS安裝程式中的錯誤），因此不建議使用此選項。";
+"0yA-ct-dgi.ibShadowedToolTip" = "Apple Enclave標示符。\n將此值設定為任何非零的64位整數將允許使用個人化的 Apple Secure Boot 標示符。設定此值且 SecureBootModel 有效且未停用的情況等效於實現 Apple Secure Boot 的完全安全性。如果要使用此設定，請確保使用加密安全的隨機數建立器建立隨機的64位數字. 設定此值且 SecureBootModel 有效且未停用，可以實現 Apple Secure Boot 的完全安全性.\n\n注意 1: 您必須重新安裝系统或使用 macOS DMG 恢復–將此值設定為非零後，個人化安裝。只有通過 macOS 恢復模式或使用 asr 建立的個人版本，才能安裝ApECID值設定為非零的操作系统。.\n\n注意 2: 當前，此選項的使用不可靠（顯然是 macOS 安裝程式中的錯誤），因此不建議使用此選項。";
 
 /* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "1NZ-HO-WUF"; */
 "1NZ-HO-WUF.headerCell.title" = "說明";
@@ -249,7 +249,7 @@
 "aUx-rK-UTX.title" = "Scan Policy";
 
 /* Class = "NSButtonCell"; title = "Use minimal UI display"; ObjectID = "ak1-aD-NH7"; */
-"ak1-aD-NH7.title" = "Use minimal UI display";
+"ak1-aD-NH7.title" = "使用最小 UI 顯示";
 
 /* Class = "NSButtonCell"; title = "Select All"; ObjectID = "b27-wQ-s5W"; */
 "b27-wQ-s5W.title" = "全選";
